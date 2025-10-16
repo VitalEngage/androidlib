@@ -1,0 +1,17 @@
+plugins {
+    id 'com.android.library'
+    id 'maven-publish'
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId = 'com.github.VitalEngage'
+            artifactId = 'library'
+            version = 'v1.0.0'
+
+            artifact file('vitalengage.aar')
+            packaging 'aar'
+        }
+    }
+}
