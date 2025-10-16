@@ -1,14 +1,11 @@
-plugins {
-    id 'com.android.library'
-    id 'maven-publish'
-}
+apply plugin: 'maven-publish'
 
 publishing {
     publications {
         maven(MavenPublication) {
             groupId = 'com.github.VitalEngage'
             artifactId = 'library'
-            version = 'v1.0.0'
+            version = 'v1.0.1'
 
             artifact file('vitalengage.aar')
             packaging 'aar'
