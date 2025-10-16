@@ -1,0 +1,5 @@
+# .jitpack.yml
+
+# This tells JitPack to ONLY run the 'publishToMavenLocal' task
+# which you successfully made available.
+install: ./gradlew publishToMavenLocal
